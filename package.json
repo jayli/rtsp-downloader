@@ -1,0 +1,22 @@
+{
+  "name": "rtsp-recoder",
+  "version": "1.0.0",
+  "description": "rtsp-recoder",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jayli/rtsp-recoder.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jayli/rtsp-recoder/issues"
+  },
+  "homepage": "https://github.com/jayli/rtsp-recoder#readme",
+  "dependencies": {
+    "node-rtsp-recorder": "^1.0.3"
+  }
+}
