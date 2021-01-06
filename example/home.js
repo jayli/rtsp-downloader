@@ -8,7 +8,7 @@ const fh = new FileHandler();
 (function(){
 
   var rec = new Recorder({
-    url: 'rtsp://admin:hello1234@192.168.0.20:554/h264/ch1/main/av_stream',
+    url: 'rtsp://admin:hello1234@192.168.0.112:554/h264/ch1/main/av_stream',
     timeLimit: 60 * 15, // 15 minutes
     folderSizeLimit : 10,
     folder: join(__dirname , '/videos/'),
