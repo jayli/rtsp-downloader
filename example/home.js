@@ -10,7 +10,7 @@ const fh = new FileHandler();
   var rec = new Recorder({
     url: 'rtsp://admin:hello1234@192.168.0.112:554/h264/ch1/main/av_stream',
     timeLimit: 60 * 15, // 15 minutes
-    folderSizeLimit : 10,
+    folderSizeLimit : 30,
     folder: join(__dirname , '/videos/'),
     name: 'cam1',
   });
