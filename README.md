@@ -4,6 +4,12 @@
 
 Records RTSP Audio/Visual Streams to local disk using ffmpeg. Make sure [ffmpeg](http://ffmpeg.org/) is installed.
 
+### Install
+
+    npm i --save rtsp-downloader
+
+### Run test script
+
 Local script:`../example/home.js` or run:
 
     npm start
