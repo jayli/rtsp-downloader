@@ -1,5 +1,7 @@
 # rtsp-downloader
 
+![](https://nodei.co/npm/rtsp-downloader.png?downloads=true&downloadRank=true&stars=true)
+
 @auther jayli
 
 Records RTSP Audio/Visual Streams to local disk using ffmpeg. Make sure [ffmpeg](http://ffmpeg.org/) is installed.
