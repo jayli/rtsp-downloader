@@ -2,6 +2,7 @@
 node_modules
 example/videos/cam*
 npm-debug.log
+package-lock.json
 *.swp
 .sw*
 .idea/*
