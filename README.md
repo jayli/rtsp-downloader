@@ -2,7 +2,7 @@
 
 @auther jayli
 
-Records RTSP Audio/Visual Streams to local disk using ffmpeg
+Records RTSP Audio/Visual Streams to local disk using ffmpeg. Make sure [ffmpeg](http://ffmpeg.org/) is installed.
 
 Local script:`../example/home.js` or run:
 
