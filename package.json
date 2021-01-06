@@ -1,7 +1,7 @@
 {
-  "name": "rtsp-recoder",
+  "name": "rtsp-downloader",
   "version": "1.0.0",
-  "description": "rtsp-recoder",
+  "description": "rtsp stream downloader",
   "main": "lib/index.js",
   "scripts": {
     "start": "node ./example/home.js",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jayli/rtsp-recoder.git"
+    "url": "git+https://github.com/jayli/rtsp-downloader.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jayli/rtsp-recoder/issues"
+    "url": "https://github.com/jayli/rtsp-downloader/issues"
   },
-  "homepage": "https://github.com/jayli/rtsp-recoder#readme",
+  "homepage": "https://github.com/jayli/rtsp-downloader#readme",
   "dependencies": {
     "babel-eslint": "^8.2.6",
     "du": "^0.1.0",
