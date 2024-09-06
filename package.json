@@ -5,6 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "start": "node ./bin/recoder.js",
+    "docker:build": "docker build -t rtsp-downloader .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
