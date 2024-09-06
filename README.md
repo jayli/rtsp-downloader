@@ -126,3 +126,12 @@ var rec = new Recorder({
 // Starts Recording
 rec.startRecording();
 ```
+
+
+------------------------------------
+
+npm run docker:build
+npm run start
+docker run --init -d --restart=unless-stopped -v /Users/bachi/ttt/aaa:/app/videos -v /Users/bachi/ttt/config:/app/config --publish 3000:3000 rtsp-downloader ./bin/recoder.js
+
+两个主要目录，一个是配置文件目录，一个是视频存放目录
