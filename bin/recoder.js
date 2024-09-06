@@ -3,6 +3,7 @@
 const {join} = require('path');
 const Recorder = require('../lib/index').Recorder
 const FileHandler = require('../lib/index').FileHandler;
+const childProcess = require('child_process')
 const fs = require('fs');
 const os = require('os');
 
@@ -24,9 +25,42 @@ const fullConfig = {
   ...defaultConfig, ...config
 };
 
-console.log(fullConfig);
-
 (function() {
+
+
+
+  // const child = childProcess.spawn('/app/node_modules/ffmpeg-ffprobe-static/ffmpeg',
+  //   [
+  //     '--help',
+  //     // '-i',
+  //     // 'http://47.51.131.147/-wvhttp-01-/GetOneShot?image_size=1280x720&frame_count=1000000000',
+  //     // '/app/videos/xxxxx.mp4'
+  //     // '/Users/bachi/ttt/aaa/xxxxx.mp4'
+  //   ],
+  //   { 
+  //     detached: false,
+  //     stdio: 'inherit',
+  //   });
+
+  // console.log(child);
+  // return;
+  // child.stdout.on("data", (data) => {
+  //   console.log(data)
+  // })
+
+  // child.stderr.on('data', (data) => {
+  //   console.error(data)
+  // })
+
+  // child.on('close', (code) => {
+  //   console.log('进程关闭' + ' ' + code)
+
+  // })
+
+  // console.log('ok')
+
+  // return;
+
   var rec = new Recorder(fullConfig);
   rec.startRecording();
   console.log('recoder running')
