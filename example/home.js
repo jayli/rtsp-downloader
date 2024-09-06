@@ -4,7 +4,7 @@ const FileHandler = require('../lib/index').FileHandler;
 const fs = require('fs');
 const os = require('os');
 
-(function(){
+(function() {
 
   var rec = new Recorder({
     // rtsp testing
