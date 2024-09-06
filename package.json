@@ -23,6 +23,7 @@
   "homepage": "https://github.com/jayli/rtsp-downloader#readme",
   "dependencies": {
     "babel-eslint": "^8.2.6",
+    "ffmpeg-ffprobe-static": "^5.1.0-rc.1",
     "du": "^0.1.0",
     "find": "^0.3.0",
     "moment": "^2.22.2",
