@@ -1,8 +1,8 @@
 # 使用官方Node.js运行时作为父镜像
-FROM node:14
+FROM node:16
  
 # 设置工作目录
-WORKDIR /rtsp-downloader
+WORKDIR /usr/src/app
  
 # 复制package.json文件和package-lock.json文件（如果存在）
 COPY package.json ./
