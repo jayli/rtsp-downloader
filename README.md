@@ -11,7 +11,7 @@
 准备工作：
 
 - 本地打包：`npm run docker:build`
-- 打 openwrt 包：`npm run docker:build_arm`
+- 给arm的软路由打包：`npm run docker:build_arm`
 - 本地调试启动：`npm run start`
 - 导出包到本地：`docker save -o rtsp-downloader.tar rtsp-downloader`
 - openwrt 安装包：`docker load < rtsp-downloader.tar`
