@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/local/bin/node
 
 const {join} = require('path');
 const Recorder = require('../lib/index').Recorder

@@ -11,8 +11,6 @@ COPY package.json ./
 
 COPY . ./
 
-#COPY qemu-arm-static /usr/bin/qemu-arm-static
-
 ENV PATH=/usr/local/bin:$PATH
 
 RUN npm install --registry=https://registry.npmmirror.com
@@ -21,9 +19,9 @@ RUN npm install --registry=https://registry.npmmirror.com
 RUN mkdir /app/videos
 RUN chmod +w /app/videos
 
-RUN chmod +x /app/bin/recoder.js
+RUN chmod +x /app/bin/recorder.js
 
-ENTRYPOINT ["/app/bin/recoder.js"]
+#ENTRYPOINT ["/app/bin/recorder.js"]
 
 
 
