@@ -19,7 +19,7 @@
 启动容器：
 
 ```
-docker run --init -d --restart=unless-stopped -v /Users/bachi/ttt/aaa:/app/videos -v /Users/bachi/ttt/config:/app/config --publish 3000:3000 rtsp-downloader ./bin/recorder.js
+docker run --init -d --restart=unless-stopped -v /mnt/usb6-2/Camera:/app/videos -v /root/Configs/rtsp-downloader:/app/config --publish 3000:3000 rtsp-downloader ./bin/recorder.js
 ```
 
 Mount 两个目录：
@@ -36,6 +36,7 @@ Mount 两个目录：
 ```
 
 > openwrt 启动容器报错：“[FATAL tini (7)] exec /app/bin.js failed: No such file or directory”
+> 
 > 这个是 openwrt 的 bug，别用他的后台 GUI 导入镜像文件，要手动拷贝进 openwrt 然后手动执行`docker load ...`命令
 
 ### 源码开发和调试
