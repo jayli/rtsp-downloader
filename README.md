@@ -15,6 +15,7 @@
 - 本地调试启动：`npm run start`
 - 导出包到本地：`docker save -o rtsp-downloader.tar rtsp-downloader`
 - openwrt 安装包：`docker load < rtsp-downloader.tar`
+- 同步时间：openwrt 中运行 `docker cp /etc/localtime rtsp-downloader:/etc/localtime`
 
 启动容器：
 
