@@ -15,8 +15,8 @@ const config = (function(obj) {
 
 const defaultConfig = {
   url: "",
-  timeLimit: 60 * 15, // 15 minutes
-  folderSizeLimit : 5,
+  timeLimit: 15, // 15 minutes
+  folderSizeLimit : 5,  // 5 GB
   folder: join(__dirname , '/videos/'),
   name: 'cam1',
 };

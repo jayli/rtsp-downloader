@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
 example/videos/cam*
+videos
+videos/*
 npm-debug.log
 package-lock.json
 *.swp
