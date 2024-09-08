@@ -3,7 +3,6 @@
 const {join} = require('path');
 const Recorder = require('../lib/index').Recorder
 const FileHandler = require('../lib/index').FileHandler;
-const childProcess = require('child_process')
 const fs = require('fs');
 const os = require('os');
 
@@ -17,7 +16,7 @@ const defaultConfig = {
   url: "",
   timeLimit: 15, // 15 minutes
   folderSizeLimit : 5,  // 5 GB
-  folder: join(__dirname , '/videos/'),
+  folder: join(__dirname , "..", '/videos/'),
   name: 'cam1',
 };
 

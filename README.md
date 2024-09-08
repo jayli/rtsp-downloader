@@ -32,8 +32,16 @@ Mount 两个目录：
 ```
 {
   "url": "http://47.51.131.147/-wvhttp-01-/GetOneShot?image_size=1280x720&frame_count=1000000000",
+  "timeLimit": 15,
+  "folderSizeLimit" : 5,
+  "name": "cam1",
 }
 ```
+
+- url: 视频流地址
+- timeLimit: 视频文件时长，默认 15 分钟
+- folderSizeLimit: 文件夹大小限制，默认 5 GB
+- name: 摄像头名称，默认 cam1
 
 > openwrt 启动容器报错：“[FATAL tini (7)] exec /app/bin.js failed: No such file or directory”
 > 
@@ -45,7 +53,7 @@ Mount 两个目录：
 npm i --save rtsp-downloader
 ```
 
-代码调用方式参照：`../example/home.js` 或者执行 `npm start`
+代码调用方式参照：`../example/home.js` 或者执行 `npm run dev`
 
 使用方式：
 
