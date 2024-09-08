@@ -19,7 +19,7 @@
 启动容器：
 
 ```
-docker run --init -d --restart=unless-stopped -v /mnt/usb6-2/Camera:/app/videos -v /root/Configs/rtsp-downloader:/app/config --publish 3000:3000 rtsp-downloader ./bin/recorder.js
+docker run --init -d --restart=unless-stopped -v /mnt/usb6-2/Camera:/app/videos -v /root/Configs/rtsp-downloader:/app/config --publish 3000:3000 --name rtsp-downloader rtsp-downloader /app/bin/recorder.js
 ```
 
 Mount 两个目录：
