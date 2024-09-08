@@ -6,6 +6,7 @@
   "scripts": {
     "start": "node ./bin/recorder.js",
     "dev": "node ./bin/recorder.js",
+    "clear": "rm -rf ./videos/*",
     "docker:build": "docker build -t rtsp-downloader .",
     "docker:build_arm":"docker buildx build --platform linux/arm64/v8 -t rtsp-downloader .",
     "test": "echo \"Error: no test specified\" && exit 1"
