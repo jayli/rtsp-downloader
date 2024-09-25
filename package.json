@@ -1,6 +1,6 @@
 {
   "name": "rtsp-downloader",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "rtsp stream downloader",
   "main": "lib/index.js",
   "scripts": {
@@ -8,7 +8,7 @@
     "dev": "node ./bin/recorder.js",
     "clear": "rm -rf ./videos/*",
     "docker:build": "docker build -t rtsp-downloader .",
-    "docker:build_arm":"docker buildx build --platform linux/arm64/v8 -t rtsp-downloader .",
+    "docker:build_arm": "docker buildx build --platform linux/arm64/v8 -t rtsp-downloader .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
@@ -29,8 +29,9 @@
   "homepage": "https://github.com/jayli/rtsp-downloader#readme",
   "dependencies": {
     "babel-eslint": "^8.2.6",
-    "ffmpeg-ffprobe-static": "^5.1.0-rc.1",
+    "check-disk-space": "^3.4.0",
     "du": "^0.1.0",
+    "ffmpeg-ffprobe-static": "^5.1.0-rc.1",
     "find": "^0.3.0",
     "moment": "^2.22.2",
     "rimraf": "^2.6.2"
