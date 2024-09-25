@@ -23,3 +23,13 @@ const hasEnoughDiskSpace = async (pathName) => {
   }
 };
 
+
+const checkDiskSpace = function(pathName, successCallback, failureCallback) {
+  checkDiskSpace(pathName).then((diskSpace) => {
+    if (diskSpace.free < 70000000) {
+      successCallback();
+    } else {
+      failureCallback();
+    }
+  });
+};
