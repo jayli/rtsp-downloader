@@ -45,6 +45,11 @@ Mount 两个目录：
 > 
 > 这个是 openwrt 的 bug，别用他的后台 GUI 导入镜像文件，要手动拷贝进 openwrt 然后手动执行`docker load ...`命令
 
+
+ps:
+
+> docker 国内能用的源：https://docker.udayun.com
+
 ### 源码开发和调试
 
 引用方法：
