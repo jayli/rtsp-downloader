@@ -6,7 +6,7 @@
 
 ### Docker 构建和部署
 
-准备工作，构建和安装 docker 包：
+准备工作，构建和安装 docker 包，先把本机的 Docker 启动：
 
 - 本地打包：`npm run docker:build`
 - 给arm的软路由打包：`npm run docker:build_arm`
