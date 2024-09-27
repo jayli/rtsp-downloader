@@ -17,7 +17,7 @@
 把 tar 拷贝到 openwrt 里，启动容器：
 
 ```
-docker run --init -d --restart=unless-stopped -v /mnt/usb5-1/Camera:/app/videos -v /root/Configs/rtsp-downloader:/app/config -e TZ=Asia/Shanghai --publish 3000:3000 --name rtsp-downloader rtsp-downloader /app/bin/recorder.js
+docker run --init -d --restart=unless-stopped -v /mnt/usb7-2/Camera:/app/videos -v /root/Configs/rtsp-downloader:/app/config -e TZ=Asia/Shanghai --publish 3000:3000 --name rtsp-downloader rtsp-downloader /app/bin/recorder.js
 ```
 
 Mount 两个目录：
