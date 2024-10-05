@@ -142,7 +142,7 @@ fh.getDirectorySize('/Users/tmp/videos/', (err, value) => {
 
 // REMOVES ALL MEDIA FILES
 fh.removeDirectory('/Users/tmp/videos/*', () => {
-  console.log('Done')
+  console.log('Done')re
 });
 ```
 
@@ -166,6 +166,17 @@ var rec = new Recorder({
 //  for custom formats.
 // Starts Recording
 rec.startRecording();
+```
+
+判断是否正在录像：
+
+```js
+const Recorder = require('rtsp-downloader').Recorder
+
+var rec = new Recorder({...});
+
+// check if recoder is running?
+rec.isRecoding(); // return true or false
 ```
 
 ------------------------------------

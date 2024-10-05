@@ -1,6 +1,6 @@
 {
   "name": "rtsp-downloader",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "rtsp stream downloader",
   "main": "lib/index.js",
   "scripts": {
